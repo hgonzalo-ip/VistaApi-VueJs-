@@ -1,0 +1,301 @@
+/* fondo de Vistas Login y Sistema */
+html,
+body {
+    background: linear-gradient(#c684d3, #8c1ea0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#Body {
+    background-image: url(../Img/Fondo3.jpeg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* fondo de Vistas Login y Sistema  FIN*/
+/* Esilos de Card de login*/
+#CardLogin {
+    background: rgba(0, 0, 0, 0.4);
+    /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    margin-top: 20%;
+    border: none;
+    border-radius: 1em;
+    z-index: 1;
+}
+
+#BtnIngresar {
+    width: 100%;
+    background-color: rgba(255, 0, 98, 0.876);
+    border-radius: 1em;
+}
+
+#BtnIngresar:hover {
+    background-color: rgba(255, 0, 98, 0.692);
+    color: black;
+}
+
+/* Esilos de Card de login FIN*/
+/* Esilos de Nav superior*/
+#ImgFotoPerfil {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+#Nav {
+
+    background: rgba(204, 9, 155, 0.787);
+    box-shadow: 9px 7px 9px rgba(149, 19, 117, 0.849);
+    z-index: 1;
+}
+
+#BtnToggleSidebar {
+    background: rgba(109, 5, 83, 0.883);
+}
+
+/* Esilos de Nav superior FIN*/
+/* Esilos de Menu Sidebar */
+#DvSidebar {
+    height: 100%;
+
+
+}
+
+#Sidebar {
+    background: rgba(109, 5, 83, 0.883) !important;
+
+}
+
+.ItemNav {
+    color: white;
+}
+
+.ItemNav:hover {
+    color: rgba(82, 68, 68, 0.986);
+    background-color: rgba(255, 255, 255, 0.5);
+
+}
+
+.ListGroup {
+    background-color: rgba(109, 5, 83, 0.883) !important;
+    color: white !important;
+    border: none !important;
+}
+
+.ListGroup:hover {
+    background-color: rgba(165, 9, 126, 0.883) !important;
+}
+
+.SubMenus {
+    color: white;
+}
+
+.SubMenus:hover {
+    color: rgba(177, 161, 161, 0.794);
+
+}
+
+/* Esilos de Menu Sidebar Fin */
+/* Cambiar la apareicia del Scroll */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ab47bc;
+    border-radius: 2px;
+}
+
+/* Cambiar la apareicia del Scroll FIN */
+
+/* No Mostar en dispositico pc  */
+
+
+/* Estilo Empleados */
+#CardEmpleado:hover {
+    background-color: rgba(255, 255, 255, 0.658) !important;
+}
+
+.DropBtnMovil {
+    display: none;
+}
+
+/* Estilos Empleados FIN */
+#RowCarProveedores {
+    display: none;
+}
+
+#CardEmpleado {
+    height: 87% !important;
+}
+
+/* Clientes */
+#CardCliente {
+    height: 99% !important;
+}
+
+/* Fin Clientes */
+/* Tablas */
+table {
+    border-radius: 15px;
+
+}
+
+thead th {
+    border: none;
+}
+
+/* Tablas Fin*/
+/* Btn Acciones */
+.BtnAcciones {
+    margin-right: 4%;
+}
+
+#CardProductos {
+    width: 100%;
+
+}
+
+#RowScroll {
+    overflow: scroll;
+    width: 100%;
+    margin: 0px auto;
+    height: 500px;
+}
+
+.Info-Producto-Pc {
+    display: none;
+}
+
+.Info-Producto-Pc {
+    display: block;
+}
+
+#ImgProducto {
+    max-width: 50%;
+    margin-top: -10%;
+
+}
+
+.Card-Servicios {
+    border-top: rgba(129, 7, 44, 0.89) 4px solid !important;
+    border-radius: 10px !important;
+    max-height: 75% !important;
+}
+
+.Cd-Servicio-Footer {
+    overflow: scroll;
+    height: 70px !important;
+}
+
+#RowLstComprarProducto {
+    overflow: scroll;
+    max-height: 455px !important;
+}
+#RowLstAgregarProducto{
+    overflow: scroll;
+    max-height: 305px !important;
+}
+
+#card-Compras:hover {
+    background-color: rgb(252, 98, 226) !important;
+    cursor: pointer;
+}
+
+.Col-Dashboard {
+    margin: 8px;
+}
+
+.Col-Dashboard .card:hover {
+    background-color: rgba(240, 195, 195, 0.404);
+}
+
+#IconoCarrito {
+    display: none;
+}
+
+/* No Mostar en dispositico pc  FIN*/
+/* Media query */
+@media(max-width: 700px) {
+    #RowTblProviders {
+        display: none;
+    }
+
+    #RowCarProveedores {
+        display: block;
+    }
+
+    #RowBtnListEmpleados {
+        display: none;
+    }
+
+    .DropBtnMovil {
+        display: block;
+    }
+
+    #CardEmpleado {
+        height: 85% !important;
+    }
+
+    #CardCliente {
+        height: 88% !important;
+    }
+
+    /* BtnAcciones */
+    .BtnAcciones {
+        width: 90px;
+        margin-top: 5px;
+    }
+
+    .Info-Producto-Pc {
+        display: none;
+    }
+
+    .Info-Producto-Cell {
+        display: block;
+    }
+
+    #ImgProducto {
+        max-width: 50%;
+        max-height: 75rem;
+    }
+
+    #RowScroll {
+        overflow: scroll;
+        width: 100%;
+        margin: 0px auto;
+        height: 500px;
+
+    }
+
+    .Card-Servicios {
+        border-top: rgba(129, 7, 44, 0.89) 4px solid !important;
+        border-radius: 10px !important;
+        max-height: 85% !important;
+    }
+
+    .Cd-Servicio-Footer {
+        overflow: scroll;
+        height: 70px !important;
+    }
+
+    .Col-Dashboard {
+        margin: 10px;
+    }
+
+    #TablaGenerarVentaPC {
+        display: none;
+    }
+
+    #IconoCarrito {
+        padding-top: 8px;
+        display: block;
+    }
+}

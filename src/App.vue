@@ -1,28 +1,41 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    
+     <div id="Body" v-if="!Logueado">
+     <login  @Logueado="CambioLogueo"></login>
+    </div>
+    <div v-if="Logueado" >
+      <sidebar :key="Logueado"  @Logueado="CambioLogueo"></sidebar>
+      <nadbar :key="Logueado" @Logueado="CambioLogueo"></nadbar>
+       <router-view></router-view>
+    </div>
+  
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from './Views/Login.vue'
+import Nadbar from './Views/loyout/Nadbar.vue'
+import Sidebar from './Views/loyout/Sidebar.vue'
 
 export default {
+  components: { Login, Sidebar, Nadbar },
   name: 'App',
-  components: {
-    HelloWorld
+  data(){
+    return {
+      Logueado : false
+    }
+  },
+  methods:{
+    CambioLogueo(DatoLogueo){
+      this.Logueado = DatoLogueo
+    }
   }
 }
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+ @import 'assets/css/style.css';
+
 </style>
